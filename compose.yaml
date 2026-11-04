@@ -1,0 +1,9 @@
+services:
+  cuisine_ratings:
+    build: .
+    container_name: cuisine_ratings_app
+    ports:
+      - "8889:8888"
+    volumes:
+      - .:/app
+    working_dir: /app
